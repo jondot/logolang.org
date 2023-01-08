@@ -1,3 +1,5 @@
+![](public/logo.svg)
+
 # logolang.org for the brave parent (or talented kid!)
 
 This is the repo behind [https://logolang.org](https://logolang.org) - a free, clean, and open LOGO implementation with a modern twist.
