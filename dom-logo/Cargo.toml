@@ -1,0 +1,30 @@
+[package]
+name = "dom-logo"
+version = "0.1.0"
+authors = ["Dotan Nahum <dotan@rng0.io>"]
+edition = "2021"
+
+[profile.dev]
+lto = true
+opt-level = 3
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+thiserror = "1.0.38"
+js-sys = "0.3.60"
+wasm-bindgen = { version = "0.2.83", features = ["serde-serialize"] }
+serde = { version = "1.0", features = ["derive"] }
+regex = "1.7.0"
+
+[dependencies.web-sys]
+version = "0.3.4"
+features = [
+  "console",
+  'CanvasRenderingContext2d',
+  'Document',
+  'Element',
+  'HtmlCanvasElement',
+  'Window',
+]
